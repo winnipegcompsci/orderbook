@@ -1,0 +1,59 @@
+OKCoin:::
+-------------------------------------------------------------------------------
+OKCoin Intl. apiKey:  a3df6a8b-2799-4988-9336-e4ce74b88408
+OKCoin Intl. secretKey:  C890A97000A0A5102CF6462F4F7BDCC1
+
+Username: drichardson@enigmait.ca  
+Password: hTCzEdZc
+
+Spot Price API: Receives Latest OKCoin Spot Market Data
+-------------------------------------------------------------------------------
+GET     /api/v1/ticker              Get Price Ticker
+GET     /api/v1/depth               Get Market Depth
+GET     /api/v1/trades              Get Trade History
+GET     /api/v1/kline               Get BTC/LTC Candlestick Data
+GET     /api/v1/lend_depth          Get Top 10 Lending Entries
+
+Spot Trading API: Place Spot Orders on OKCoin
+--------------------------------------------------------------------------------
+POST    /api/v1/userinfo            Get User Account Info
+POST    /api/v1/trade               Place Orders
+POST    /api/v1/batch_trade         Batch Trade
+POST    /api/v1/cancel_order        Cancel Orders
+POST    /api/v1/order_info          Get Order Info
+POST    /api/v1/orders_info         Get Order Information in Batch
+POST    /api/v1/order_history       Only the most recent 7 days are returned
+POST    /api/v1/withdraw            BTC/LTC Withdraw
+POST    /api/v1/cancel_withdraw     Withdrawal Cancellation Request
+POST    /api/v1/borrows_info        New Get User Borrow Information
+POST    /api/v1/borrow_money        New Request Borrow
+POST    /api/v1/cancel_borrow       New Cancel Borrow Order
+POST    /api/v1/borrow_order_info   New Get Borrowing Order Info
+POST    /api/v1/repayment           New Pay Off Debt
+POST    /api/v1/unrepayments_info   New Get Debt List
+POST    /api/v1/account_records     New Get User Deposits or Withdraw Record
+
+Future Price API: Futures Price API Receive Latest OKCoin Futures Data
+-------------------------------------------------------------------------------
+GET     /api/v1/future_ticker       Get OKCoin Future Price
+GET     /api/v1/future_depth        Get OKCoin Future Market Depth
+GET     /api/v1/future_trades       Get Futures Trade History
+GET     /api/v1/future_index        Get OKCoin Futures Index Price
+GET     /api/v1/exchange_rate       Get USD-CNY Exchange Rate
+GET     /api/v1/future_estimated_price Get Estimated Delivery Price New
+GET     /api/v1/future_trades_history New Get OKCoin Futures Trade History
+GET     /api/v1/future_kline        New Get Future Candlestick Data
+GET     /api/v1/future_hold_amount  New Get Total Number Of Current Holding (cont)
+GET     /api/v1/future_explosive    New Get Forced Liquidation Orders
+
+Future Trade API: Futures Trading API for placing futures orders on OKCoin
+-------------------------------------------------------------------------------
+POST    /api/v1/future_userinfo Get OKCoin Future Account Info（Cross-Margin Mode）
+POST    /api/v1/future_position Get User Futures Positions （Cross-Margin Mode）
+POST    /api/v1/future_trade Place Orders
+POST    /api/v1/future_batch_trade Batch Trade
+POST    /api/v1/future_cancel Cancel Orders
+POST    /api/v1/future_order_info Get User Future Order
+POST    /api/v1/future_orders_info  New Get User Future Order in Batch
+POST    /api/v1/future_userinfo_4fix Get User Account Info (Fixed-Margin Mode)
+POST    /api/v1/future_position_4fix Get User Positions (Fixed-Margin Mode)

@@ -1,0 +1,26 @@
+USER:
+/v2/user/get_info           Retrieve User Info
+/v2/user/get_balance        Retrieve Account balances, Main Wallet, 796Xchange-MRI and ASICMINER-796. 
+/v2/user/get_assets         Retrieve account balance (including frozen assets and net assets)
+
+BTC Weekly Futures (USD)
+/v2/weeklyfutures/orders        Retrieve all orders
+/v2/weeklyfutures/records       Retrieve all trading records
+/v2/weeklyfutures/position      Retrieve info on held positions.
+/v2/weeklyfutures/open_buy      Implement 'Enter Bid' instruction.
+/v2/weeklyfutures/close_buy     Implement 'Offset LONG' Instruction ie: SELL to close position.
+/v2/weeklyfutures/open_sell     Implement "Enter Ask" instruction.
+/v2/weeklyfutures/close_sell    Implement 'Offset SHORT' instruction ie: BUY to close position.
+/v2/weeklyfutures/cancel_order  Cancel a single order entry.
+/v2/weeklyfutures/cancel_all    Cancel all the order entries in batches.
+
+LTC Weekly Futures (USD)
+/v2/ltcfutures/orders	        Retrieve all orders.
+/v2/ltcfutures/records	        Retrieve trading records.
+/v2/ltcfutures/position	        Retrieve info on Held Positions.
+/v2/ltcfutures/open_buy	        Implement "Enter Bid" instruction.
+/v2/ltcfutures/close_buy	    Implement "Offset LONG" instruction, i.e. SELL to close position.
+/v2/ltcfutures/open_sell	    Implement "Enter Ask" instruction.
+/v2/ltcfutures/close_sell	    Implement "Offset SHORT" instruction, i.e. BUY to close position.
+/v2/ltcfutures/cancel_order	    Cancel a single order entry.
+/v2/ltcfutures/cancel_all	    Cancel LTC Weekly Futures orders in batches.
