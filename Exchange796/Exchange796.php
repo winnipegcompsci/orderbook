@@ -6,6 +6,9 @@ class Exchange796 extends Exchange796Base {
     function __construct($authentication) {
         parent::__construct($authentication, null, null);
     }
+    
+    // Create Exchange API Calls
+    // Create TYPE attributes and build URL accordingly (from API on 796.com)    
 
     // User 
     public function user_get_info($params = null) {
@@ -57,7 +60,7 @@ class Exchange796 extends Exchange796Base {
         return $this->post("/v2/weeklyfutures/cancel_all", $params);
     }
     
-    // LTC WEekly Futures (USD)
+    // LTC Weekly Futures (USD)
     public function ltc_weekly_orders($params = null) {
         return $this->get("/v2/ltcfutures/orders", $params);
     }
